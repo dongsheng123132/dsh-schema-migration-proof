@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "subject": { "id": "session-index", "revision": "dsh-47f9438" },
+  "migration": {
+    "id": "session-index-v1-v2",
+    "toolRevisionSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "fromSchemaId": "session-index",
+    "fromVersion": "1",
+    "toSchemaId": "session-index",
+    "toVersion": "2",
+    "reversible": true
+  },
+  "policy": { "requireIdempotent": true, "requireRollbackWhenReversible": true, "requiredInvariantIds": ["identity-preserved", "count-preserved"] },
+  "cases": [
+    {
+      "caseId": "basic-session",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "outputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "rerunOutputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "rollbackSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expectedRollbackSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "lossy": false,
+      "invariants": [
+        { "id": "identity-preserved", "status": "passed", "evidenceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+        { "id": "count-preserved", "status": "passed", "evidenceSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" }
+      ],
+      "lossDisclosures": []
+    }
+  ]
+}
