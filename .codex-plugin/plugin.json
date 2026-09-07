@@ -1,6 +1,6 @@
 {
   "name": "dsh-schema-migration-proof",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deterministic evidence for DSH schema migration fixtures",
   "author": {
     "name": "hfshfg"
@@ -12,7 +12,13 @@
     "longDescription": "Verifies revision-bound migration fixtures for idempotence, rollback, required invariants and explicit lossy-field disclosure without executing migrations or returning data bodies.",
     "developerName": "hfshfg",
     "category": "Developer Tools",
-    "capabilities": ["Migration fixture evidence", "Rollback verification", "Loss disclosure"],
-    "defaultPrompt": ["Verify this recorded schema migration evidence."]
+    "capabilities": [
+      "Migration fixture evidence",
+      "Rollback verification",
+      "Loss disclosure"
+    ],
+    "defaultPrompt": [
+      "Verify this recorded schema migration evidence."
+    ]
   }
 }
