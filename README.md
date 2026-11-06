@@ -1,5 +1,7 @@
 # DSH Schema Migration Proof
 
+**Maintainer / Author：贺去病 (He Fangsheng / Dosen) · [hequbing.com](https://www.hequbing.com)**
+
 Offline, content-addressed evidence for recorded DeepSeek Harness schema migrations. It verifies fixed fixture envelopes for output determinism, idempotent reruns, reversible rollback, required invariants and explicit lossy-field disclosure without executing a migration or returning data bodies.
 
 This is not a migration runner, database tool, recovery system, or second surface-contract verifier. `dsh-recovery-proof` tests isolated restore drills; `dsh-surface-contract-proof` compares ToolRuntime/MCP/CLI envelopes; `dsh-lineage` records object/action relationships. This project scores the evidence produced by a migration test harness whose tool revision and source/target schemas are pinned.
