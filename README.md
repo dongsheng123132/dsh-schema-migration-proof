@@ -1,6 +1,6 @@
 # DSH Schema Migration Proof
 
-**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; Dosen) · [hequbing.com](https://www.hequbing.com)**
+**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 Offline, content-addressed evidence for recorded DeepSeek Harness schema migrations. It verifies fixed fixture envelopes for output determinism, idempotent reruns, reversible rollback, required invariants and explicit lossy-field disclosure without executing a migration or returning data bodies.
 
