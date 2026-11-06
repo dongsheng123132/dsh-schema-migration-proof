@@ -1,6 +1,6 @@
 # DSH Schema Migration Proof
 
-作者 / 维护者：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+作者 / 维护者：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
 
 对 DeepSeek Harness schema 迁移的离线内容寻址证据层。它只核验固定 fixture envelope：输出确定性、重复执行幂等、可逆回滚、必需不变量以及有损字段披露；绝不执行迁移、连接数据库或返回数据正文。
 
